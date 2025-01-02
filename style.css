@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+body {
+	background: #263243;
+}
+/*new change*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*ended here*/
+.title {
+	color: #00000;
+/*	font-size: 1rem;*/
+	margin: 1rem 0 0 0;
+	padding-top: 1rem;
+	text-align: center;
+	
+}
+.table_title {
+	text-align: center;
+	margin-top: 1rem;
+}
+.main {
+	background: #ffffff;
+	margin: auto;
+	width: 95%;
+
+}
+
+.success {
+	color:green;
+}
+.fail {
+	color:red;
+}
+.side {
+  	position: sticky;
+}
+.sidebutton {
+    display: inline-block;
+
+	background-color: #251C2F;
+    color: #fff;
+	margin-top: 0.063rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+.sidebutton:active {
+    background-color: #4CAF50;
+    color: white;
+}
+.sidebutton:hover {
+    background-color: #111;
+}
+.capbtn {
+	color: black;
+	text-decoration: none;
+}
+/* Footer CSS*/
+footer{
+    background: #111;
+    height: auto;
+    width: 95vw;
+	margin: 0 auto;
+    color: #fff;
+}
+.footer-menu ul{
+  display: flex;
+  align-items: center;
+  font-size: 2vw;
+}
+
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+#exp, #prof, #emp, #drop, #del, #upd {
+  display: none;
+}
+.buttonT {
+	padding: 0.5rem;
+	color: #ffffff;
+	background: #120F0F;
+}
